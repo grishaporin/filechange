@@ -8,7 +8,6 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
 var logger *log.Logger
@@ -166,5 +165,7 @@ func main() {
 	}
 
 	//Пауза для прочтения логов в контейнере? | сохранять логи на volume? | выводить логи в логи контейнера?
-	time.Sleep(time.Minute * 5)
+	fmt.Print("Нажмите Enter, чтобы закрыть программу.")
+	var s string
+	fmt.Scanln(&s)
 }
