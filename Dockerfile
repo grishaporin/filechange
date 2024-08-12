@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-ENTRYPOINT [ "go", "run", "main.go" ]
+RUN [ "go", "build" ]
+
+ENTRYPOINT [ "./filechange" ]
