@@ -4,11 +4,11 @@ WORKDIR /app
 
 COPY . .
 
-ARG wkdir=dir
-ARG old=int
-ARG new=float
-ENV wkdir=${wkdir}
-ENV old=${old}
-ENV new=${new}
+ARG WKDIR=dir
+ARG OLD=int
+ARG NEW=float
+ENV WKDIR=${WKDIR}
+ENV OLD=${OLD}
+ENV NEW=${NEW}
 
-CMD go run main.go ${wkdir} ${old} ${new}
+CMD ["sh", "-c", "go run main.go $WKDIR $OLD $NEW"]
