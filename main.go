@@ -41,7 +41,8 @@ func ProcessFile(path string) {
 
 	f, err := os.Open(path)
 	if err != nil {
-		panic(err)
+		logger.Println("[ОШИБКА] Не удалось открыть файл " + path + "\n")
+		return
 	}
 	defer f.Close()
 
@@ -115,10 +116,12 @@ func ProcessFile(path string) {
 	}
 
 	//Сохранить изменения в файл
+	//??? Открываю уже открытый файл ?переместить запись изменений в defer перед f.Close()?
 	if isChanged {
 		err := os.WriteFile(path, []byte(strings.Join(result, "\n")), 0644)
 		if err != nil {
-			panic(err)
+			logger.Println("[ОШИБКА] Не удалось сохранить изменения в файле " + path + "\n")
+			return
 		}
 	}
 
