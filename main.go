@@ -149,7 +149,13 @@ func main() {
 	}
 
 	//Создание файла с логами
-	f, err := os.CreateTemp(".", "log-*.txt")
+
+	err := os.MkdirAll("logs", os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
+
+	f, err := os.CreateTemp("logs", "log-*.txt")
 	if err != nil {
 		panic(err)
 	}
