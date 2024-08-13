@@ -47,7 +47,7 @@ func ProcessFile(path string) {
 
 	scanner := bufio.NewScanner(f)
 
-	//Сохранения результата, чтобы переписать файл в случае замены строки в нём
+	//Сохранение результата, чтобы переписать файл в случае замены строки в нём
 	isChanged := false
 	result := []string{}
 
@@ -80,7 +80,7 @@ func ProcessFile(path string) {
 			lognewBuf = []string{}
 		}
 
-		//Если срока содержик строку для замены, изменить сроку и созранить изменения в буфер
+		//Если строка содержит строку для замены, изменить строку и сохранить изменения в буфер
 		for strings.Contains(input, os.Args[2]) {
 
 			if !isChanged {
@@ -128,7 +128,7 @@ func visit(path string, d os.DirEntry, err error) error {
 
 	if err != nil {
 
-		logger.Println("Ошибка по пути: " + path + "\nЭтот каталог будет пропущен\n")
+		logger.Println("Ошибка по пути: " + path + "\nЭтот каталог будет пропущен.\n")
 
 		return fs.SkipDir
 	}
@@ -162,7 +162,7 @@ func main() {
 	defer f.Close()
 	logger = log.New(f, "", 0)
 
-	logger.Println("Список изменений сроки \"" + os.Args[2] + "\" на строку \"" + os.Args[3] + "\" в каталоге: " + os.Args[1] + "\n")
+	logger.Println("Список изменений строки \"" + os.Args[2] + "\" на строку \"" + os.Args[3] + "\" в каталоге: " + os.Args[1] + "\n")
 
 	//Проход по каталогу
 	err = filepath.WalkDir(os.Args[1], visit)
