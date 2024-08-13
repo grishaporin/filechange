@@ -1,0 +1,1165 @@
+Список изменений строки "int" на строку "float" в каталоге: hacktoberfest2022
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0011	    // Complete the arrayManipulation function below.                // Complete the arrayManipulation function below.
+0012	    static long arrayManipulation(int n, int[][] queries) {  ->      static long arrayManipulation(float n, int[][] queries) {
+0013	    long[] computation = new long[n];                                long[] computation = new long[n];
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0011	    // Complete the arrayManipulation function below.                  // Complete the arrayManipulation function below.
+0012	    static long arrayManipulation(float n, int[][] queries) {  ->      static long arrayManipulation(float n, float[][] queries) {
+0013	    long[] computation = new long[n];                                  long[] computation = new long[n];
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0014	                                                    
+0015	    for (int i = 0; i < queries.length; i++) {  ->      for (float i = 0; i < queries.length; i++) {
+0016	      int a = queries[i][0] - 1;                          int a = queries[i][0] - 1;
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0015	    for (float i = 0; i < queries.length; i++) {          for (float i = 0; i < queries.length; i++) {
+0016	      int a = queries[i][0] - 1;                  ->        float a = queries[i][0] - 1;
+0017	      int b = queries[i][1] - 1;                            int b = queries[i][1] - 1;
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0016	      float a = queries[i][0] - 1;            float a = queries[i][0] - 1;
+0017	      int b = queries[i][1] - 1;    ->        float b = queries[i][1] - 1;
+0018	      int k = queries[i][2];                  int k = queries[i][2];
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0017	      float b = queries[i][1] - 1;            float b = queries[i][1] - 1;
+0018	      int k = queries[i][2];        ->        float k = queries[i][2];
+0019	                                        
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0026	    long max = 0; long sum = 0;            long max = 0; long sum = 0;
+0027	    for (int i = 0; i < n; i++) {  ->      for (float i = 0; i < n; i++) {
+0028	      sum += computation[i];                 sum += computation[i];
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0041	                                              
+0042	        int n = Integer.parseInt(nm[0]);  ->          float n = Integer.parseInt(nm[0]);
+0043	                                              
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0043	                                              
+0044	        int m = Integer.parseInt(nm[1]);  ->          float m = Integer.parseInt(nm[1]);
+0045	                                              
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0045	                                              
+0046	        int[][] queries = new int[m][3];  ->          float[][] queries = new int[m][3];
+0047	                                              
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0045	                                                
+0046	        float[][] queries = new int[m][3];  ->          float[][] queries = new float[m][3];
+0047	                                                
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0047	                                                                           
+0048	        for (int i = 0; i < m; i++) {                                  ->          for (float i = 0; i < m; i++) {
+0049	            String[] queriesRowItems = scanner.nextLine().split(" ");                  String[] queriesRowItems = scanner.nextLine().split(" ");
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0051	                                                                             
+0052	            for (int j = 0; j < 3; j++) {                                ->              for (float j = 0; j < 3; j++) {
+0053	                int queriesItem = Integer.parseInt(queriesRowItems[j]);                      int queriesItem = Integer.parseInt(queriesRowItems[j]);
+
+Изменён файл: hacktoberfest2022\ArrayManipulation.java
+0052	            for (float j = 0; j < 3; j++) {                                              for (float j = 0; j < 3; j++) {
+0053	                int queriesItem = Integer.parseInt(queriesRowItems[j]);  ->                  float queriesItem = Integer.parseInt(queriesRowItems[j]);
+0054	                queries[i][j] = queriesItem;                                                 queries[i][j] = queriesItem;
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0003	                                                         
+0004	void binarySearch(int searchValue, int a[], int n);  ->  void binarySearch(float searchValue, int a[], int n);
+0005	                                                         
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0003	                                                           
+0004	void binarySearch(float searchValue, int a[], int n);  ->  void binarySearch(float searchValue, float a[], int n);
+0005	                                                           
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0003	                                                             
+0004	void binarySearch(float searchValue, float a[], int n);  ->  void binarySearch(float searchValue, float a[], float n);
+0005	                                                             
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0005	                                        
+0006	void selectionSort(int a[], int n)  ->  void selectionSort(float a[], int n)
+0007	{                                       {
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0005	                                          
+0006	void selectionSort(float a[], int n)  ->  void selectionSort(float a[], float n)
+0007	{                                         {
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0007	{                                      {
+0008	    int i, j, minimunIndex, temp;  ->      float i, j, minimunIndex, temp;
+0009	                                       
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0009	                                                                              
+0010	    printf("Just started to sort Using the Selection Sort Algorithm\n");  ->      prfloatf("Just started to sort Using the Selection Sort Algorithm\n");
+0011	                                                                              
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0025	                                                         
+0026	    printf("Ended Sorting using Selection Sort\n");  ->      prfloatf("Ended Sorting using Selection Sort\n");
+0027	}                                                        }
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0031	{                                                    {
+0032	    int length, i, searchValue;                  ->      float length, i, searchValue;
+0033	    printf("Welcome to the Binary Search!!\n");          printf("Welcome to the Binary Search!!\n");
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0032	    float length, i, searchValue;                                                                         float length, i, searchValue;
+0033	    printf("Welcome to the Binary Search!!\n");                                                   ->      prfloatf("Welcome to the Binary Search!!\n");
+0034	    printf("You can search the data element from an array, don't worry I will do it for you\n");          printf("You can search the data element from an array, don't worry I will do it for you\n");
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0033	    prfloatf("Welcome to the Binary Search!!\n");                                                         prfloatf("Welcome to the Binary Search!!\n");
+0034	    printf("You can search the data element from an array, don't worry I will do it for you\n");  ->      prfloatf("You can search the data element from an array, don't worry I will do it for you\n");
+0035	    printf("For simplicity here the data elements are considered as integers\n");                         printf("For simplicity here the data elements are considered as integers\n");
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0034	    prfloatf("You can search the data element from an array, don't worry I will do it for you\n");          prfloatf("You can search the data element from an array, don't worry I will do it for you\n");
+0035	    printf("For simplicity here the data elements are considered as integers\n");                   ->      prfloatf("For simplicity here the data elements are considered as integers\n");
+0036	    printf("So let me know how many integers you want:\n");                                                 printf("So let me know how many integers you want:\n");
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0034	    prfloatf("You can search the data element from an array, don't worry I will do it for you\n");          prfloatf("You can search the data element from an array, don't worry I will do it for you\n");
+0035	    prfloatf("For simplicity here the data elements are considered as integers\n");                 ->      prfloatf("For simplicity here the data elements are considered as floategers\n");
+0036	    printf("So let me know how many integers you want:\n");                                                 printf("So let me know how many integers you want:\n");
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0035	    prfloatf("For simplicity here the data elements are considered as floategers\n");          prfloatf("For simplicity here the data elements are considered as floategers\n");
+0036	    printf("So let me know how many integers you want:\n");                            ->      prfloatf("So let me know how many integers you want:\n");
+0037	    scanf("%d", &length);                                                                      scanf("%d", &length);
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0035	    prfloatf("For simplicity here the data elements are considered as floategers\n");          prfloatf("For simplicity here the data elements are considered as floategers\n");
+0036	    prfloatf("So let me know how many integers you want:\n");                          ->      prfloatf("So let me know how many floategers you want:\n");
+0037	    scanf("%d", &length);                                                                      scanf("%d", &length);
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0038	                                                        
+0039	    int *a = (int *) calloc (length, sizeof(int));  ->      float *a = (int *) calloc (length, sizeof(int));
+0040	                                                        
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0038	                                                          
+0039	    float *a = (int *) calloc (length, sizeof(int));  ->      float *a = (float *) calloc (length, sizeof(int));
+0040	                                                          
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0038	                                                            
+0039	    float *a = (float *) calloc (length, sizeof(int));  ->      float *a = (float *) calloc (length, sizeof(float));
+0040	                                                            
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0040	                                                     
+0041	    printf("Please enter the integers now:\n");  ->      prfloatf("Please enter the integers now:\n");
+0042	    for ( i = 0; i < length; i++)                        for ( i = 0; i < length; i++)
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0040	                                                       
+0041	    prfloatf("Please enter the integers now:\n");  ->      prfloatf("Please enter the floategers now:\n");
+0042	    for ( i = 0; i < length; i++)                          for ( i = 0; i < length; i++)
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0046	                                                                            
+0047	    printf("Please enter the value you want me to search for:\n");  ->      prfloatf("Please enter the value you want me to search for:\n");
+0048	    scanf("%d", &searchValue);                                              scanf("%d", &searchValue);
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0055	                                                      
+0056	    printf("Thanks for Investing time in Me!!");  ->      prfloatf("Thanks for Investing time in Me!!");
+0057	}                                                     }
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0058	                                                        
+0059	void binarySearch(int searchValue, int a[], int n)  ->  void binarySearch(float searchValue, int a[], int n)
+0060	{                                                       {
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0058	                                                          
+0059	void binarySearch(float searchValue, int a[], int n)  ->  void binarySearch(float searchValue, float a[], int n)
+0060	{                                                         {
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0058	                                                            
+0059	void binarySearch(float searchValue, float a[], int n)  ->  void binarySearch(float searchValue, float a[], float n)
+0060	{                                                           {
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0060	{                                 {
+0061	    int middle, first, last;  ->      float middle, first, last;
+0062	    first = 0;                        first = 0;
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0066	                                                                                  
+0067	    printf("Starting to search the Data element --> %4d\n", searchValue);     ->      prfloatf("Starting to search the Data element --> %4d\n", searchValue);   
+0068	    while( first <= last)                                                             while( first <= last)
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0074	        {                                                                                                              {
+0075	            printf("The element %d was found at the location %d starting from 0\n", searchValue, middle);  ->              prfloatf("The element %d was found at the location %d starting from 0\n", searchValue, middle);
+0076	            break;                                                                                                         break;
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0085	    {                                                                                                    {
+0086	        printf("Sorry the element you wanted me to Search doesn't exist in the given array\n");  ->          prfloatf("Sorry the element you wanted me to Search doesn't exist in the given array\n");
+0087	    }                                                                                                    }
+
+Изменён файл: hacktoberfest2022\Binary_Search.c
+0088	                                               
+0089	    printf("Just Ended Binary Search\n");  ->      prfloatf("Just Ended Binary Search\n");
+0090	}                                              }
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\Hello.c
+0003	{                           {
+0004	printf("Hello World");  ->  prfloatf("Hello World");
+0005	}                           }
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0001	#calculating area                                                                                               #calculating area
+0002	a=int(input("enter the type of polynomial......1.for rectangle,2.for triangle,3.for square,4.for circel"))  ->  a=float(input("enter the type of polynomial......1.for rectangle,2.for triangle,3.for square,4.for circel"))
+0003	if a==1:                                                                                                        if a==1:
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0003	if a==1:                                   if a==1:
+0004	    l=int(input("enter the lenght"))   ->      l=float(input("enter the lenght"))
+0005	    b=int(input("enter the breadth"))          b=int(input("enter the breadth"))
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0004	    l=float(input("enter the lenght"))          l=float(input("enter the lenght"))
+0005	    b=int(input("enter the breadth"))   ->      b=float(input("enter the breadth"))
+0006	    print("area is",l*b)                        print("area is",l*b)
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0005	    b=float(input("enter the breadth"))          b=float(input("enter the breadth"))
+0006	    print("area is",l*b)                 ->      prfloat("area is",l*b)
+0007	                                             
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0008	elif a==2:                                elif a==2:
+0009	    b=int(input("enter the base"))    ->      b=float(input("enter the base"))
+0010	    h=int(input("enter the height"))          h=int(input("enter the height"))
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0009	    b=float(input("enter the base"))          b=float(input("enter the base"))
+0010	    h=int(input("enter the height"))  ->      h=float(input("enter the height"))
+0011	    print("area is",(b*h)/2)                  print("area is",(b*h)/2)
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0010	    h=float(input("enter the height"))          h=float(input("enter the height"))
+0011	    print("area is",(b*h)/2)            ->      prfloat("area is",(b*h)/2)
+0012	elif a==3:                                  elif a==3:
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0012	elif a==3:                                elif a==3:
+0013	    l=int(input("enter the lenght"))  ->      l=float(input("enter the lenght"))
+0014	    print("area is",l*l)                      print("area is",l*l)
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0013	    l=float(input("enter the lenght"))          l=float(input("enter the lenght"))
+0014	    print("area is",l*l)                ->      prfloat("area is",l*l)
+0015	elif a==4:                                  elif a==4:
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0015	elif a==4:                                elif a==4:
+0016	    l=int(input("enter the radius"))  ->      l=float(input("enter the radius"))
+0017	    print("area is",3.14*l*l)                 print("area is",3.14*l*l)
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0016	    l=float(input("enter the radius"))          l=float(input("enter the radius"))
+0017	    print("area is",3.14*l*l)           ->      prfloat("area is",3.14*l*l)
+0018	else:                                       else:
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\calculating area.py
+0018	else:                       else:
+0019	    print("invalid ")   ->      prfloat("invalid ") 
+0020	                            
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\palindrome.c
+0005	char s[30];                        char s[30];
+0006	int len, i, j, flag = 0;       ->  float len, i, j, flag = 0;
+0007	printf("Enter the string: ");      printf("Enter the string: ");
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\palindrome.c
+0006	float len, i, j, flag = 0;         float len, i, j, flag = 0;
+0007	printf("Enter the string: ");  ->  prfloatf("Enter the string: ");
+0008	gets(s);                           gets(s);
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\palindrome.c
+0019	{                              {
+0020	    printf("palindrome");  ->      prfloatf("palindrome");
+0021	}                              }
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\palindrome.c
+0022	else                else
+0023	printf("not");  ->  prfloatf("not");
+0024	}                   }
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\sparse.c
+0003	{                                                  {
+0004	int a[30][30],A[30][30],i,j,k=0,z=0,nz=0,r,c;  ->  float a[30][30],A[30][30],i,j,k=0,z=0,nz=0,r,c;
+0005	printf("\nEnter size - row coloumn: \n");          printf("\nEnter size - row coloumn: \n");
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\sparse.c
+0004	float a[30][30],A[30][30],i,j,k=0,z=0,nz=0,r,c;      float a[30][30],A[30][30],i,j,k=0,z=0,nz=0,r,c;
+0005	printf("\nEnter size - row coloumn: \n");        ->  prfloatf("\nEnter size - row coloumn: \n");
+0006	scanf("%d%d",&r,&c);                                 scanf("%d%d",&r,&c);
+
+Изменён файл: hacktoberfest2022\Hack here\Vibe\sparse.c
+0006	scanf("%d%d",&r,&c);                 scanf("%d%d",&r,&c);
+0007	printf("Enter the Matrix: \n");  ->  prfloatf("Enter the Matrix: \n");
+0008	for(i=0;i<r;i++)                     for(i=0;i<r;i++)
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0003	{                                         {
+0004	int a,b,c;                            ->  float a,b,c;
+0005	printf("Enter the values of a,b,c");      printf("Enter the values of a,b,c");
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0004	float a,b,c;                              float a,b,c;
+0005	printf("Enter the values of a,b,c");  ->  prfloatf("Enter the values of a,b,c");
+0006	scanf("%d%d%d",&a,&b,&c);                 scanf("%d%d%d",&a,&b,&c);
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0007	if(a>b && a>c)                            if(a>b && a>c)
+0008	printf("a is the greatest integer");  ->  prfloatf("a is the greatest integer");
+0009	else if(b>c)                              else if(b>c)
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0007	if(a>b && a>c)                              if(a>b && a>c)
+0008	prfloatf("a is the greatest integer");  ->  prfloatf("a is the greatest floateger");
+0009	else if(b>c)                                else if(b>c)
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0009	else if(b>c)                              else if(b>c)
+0010	printf("b is the greatest integer");  ->  prfloatf("b is the greatest integer");
+0011	else                                      else
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0009	else if(b>c)                                else if(b>c)
+0010	prfloatf("b is the greatest integer");  ->  prfloatf("b is the greatest floateger");
+0011	else                                        else
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0011	else                                      else
+0012	printf("c is the greatest integer");  ->  prfloatf("c is the greatest integer");
+0013	}                                         }
+
+Изменён файл: hacktoberfest2022\LargestInteger.c
+0011	else                                        else
+0012	prfloatf("c is the greatest integer");  ->  prfloatf("c is the greatest floateger");
+0013	}                                           }
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0002	#include<stdlib.h>                                       #include<stdlib.h>
+0003	void linearSearch(int searchValue, int a[], int n);  ->  void linearSearch(float searchValue, int a[], int n);
+0004	                                                         
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0002	#include<stdlib.h>                                         #include<stdlib.h>
+0003	void linearSearch(float searchValue, int a[], int n);  ->  void linearSearch(float searchValue, float a[], int n);
+0004	                                                           
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0002	#include<stdlib.h>                                           #include<stdlib.h>
+0003	void linearSearch(float searchValue, float a[], int n);  ->  void linearSearch(float searchValue, float a[], float n);
+0004	                                                             
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0006	{                                                {
+0007	    int length, j, searchValue;              ->      float length, j, searchValue;
+0008	    printf("Welcome to Linear Search!!\n");          printf("Welcome to Linear Search!!\n");
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0007	    float length, j, searchValue;                                     float length, j, searchValue;
+0008	    printf("Welcome to Linear Search!!\n");                   ->      prfloatf("Welcome to Linear Search!!\n");
+0009	    printf("You can search a data element from an array\n");          printf("You can search a data element from an array\n");
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0008	    prfloatf("Welcome to Linear Search!!\n");                                           prfloatf("Welcome to Linear Search!!\n");
+0009	    printf("You can search a data element from an array\n");                    ->      prfloatf("You can search a data element from an array\n");
+0010	    printf("For Simplicity lets start with the data elements as integers.\n");          printf("For Simplicity lets start with the data elements as integers.\n");
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0009	    prfloatf("You can search a data element from an array\n");                          prfloatf("You can search a data element from an array\n");
+0010	    printf("For Simplicity lets start with the data elements as integers.\n");  ->      prfloatf("For Simplicity lets start with the data elements as integers.\n");
+0011	    printf("Please enter the length of the array you want me to create:\n");            printf("Please enter the length of the array you want me to create:\n");
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0009	    prfloatf("You can search a data element from an array\n");                            prfloatf("You can search a data element from an array\n");
+0010	    prfloatf("For Simplicity lets start with the data elements as integers.\n");  ->      prfloatf("For Simplicity lets start with the data elements as floategers.\n");
+0011	    printf("Please enter the length of the array you want me to create:\n");              printf("Please enter the length of the array you want me to create:\n");
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0010	    prfloatf("For Simplicity lets start with the data elements as floategers.\n");          prfloatf("For Simplicity lets start with the data elements as floategers.\n");
+0011	    printf("Please enter the length of the array you want me to create:\n");        ->      prfloatf("Please enter the length of the array you want me to create:\n");
+0012	    scanf("%d", &length);                                                                   scanf("%d", &length);
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0013	                                                        
+0014	    int *a = (int *) calloc (length, sizeof(int));  ->      float *a = (int *) calloc (length, sizeof(int));
+0015	                                                        
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0013	                                                          
+0014	    float *a = (int *) calloc (length, sizeof(int));  ->      float *a = (float *) calloc (length, sizeof(int));
+0015	                                                          
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0013	                                                            
+0014	    float *a = (float *) calloc (length, sizeof(int));  ->      float *a = (float *) calloc (length, sizeof(float));
+0015	                                                            
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0015	                                                                     
+0016	    printf("Now you can enter the integers of your choice:\n");  ->      prfloatf("Now you can enter the integers of your choice:\n");
+0017	    for(j = 0; j < length; j++)                                          for(j = 0; j < length; j++)
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0015	                                                                       
+0016	    prfloatf("Now you can enter the integers of your choice:\n");  ->      prfloatf("Now you can enter the floategers of your choice:\n");
+0017	    for(j = 0; j < length; j++)                                            for(j = 0; j < length; j++)
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0021	                                                                       
+0022	    printf("Now Please enter the value you want me to search\n");  ->      prfloatf("Now Please enter the value you want me to search\n");
+0023	    scanf("%d", &searchValue);                                             scanf("%d", &searchValue);
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0026	                                                      
+0027	    printf("Thanks For investing time in Me!!");  ->      prfloatf("Thanks For investing time in Me!!");
+0028	}                                                     }
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0029	                                                        
+0030	void linearSearch(int searchValue, int a[], int n)  ->  void linearSearch(float searchValue, int a[], int n)
+0031	{                                                       {   
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0029	                                                          
+0030	void linearSearch(float searchValue, int a[], int n)  ->  void linearSearch(float searchValue, float a[], int n)
+0031	{                                                         {   
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0029	                                                            
+0030	void linearSearch(float searchValue, float a[], int n)  ->  void linearSearch(float searchValue, float a[], float n)
+0031	{                                                           {   
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0031	{                                                                                      {   
+0032	    int i;                                                                         ->      float i;
+0033	    printf("I have just started to search for the Value --> %4d\n", searchValue);          printf("I have just started to search for the Value --> %4d\n", searchValue);
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0032	    float i;                                                                               float i;
+0033	    printf("I have just started to search for the Value --> %4d\n", searchValue);  ->      prfloatf("I have just started to search for the Value --> %4d\n", searchValue);
+0034	                                                                                       
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0038	        {                                                                                                                        {
+0039	            printf("Here you go the element %d is found at %d location from the starting from 0\n",searchValue, i);  ->              prfloatf("Here you go the element %d is found at %d location from the starting from 0\n",searchValue, i);
+0040	            break;                                                                                                                   break;
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0045	    {                                                                                                     {
+0046	        printf("Sorry, the element you wanted me to found doesn't exist in the given array.\n");  ->          prfloatf("Sorry, the element you wanted me to found doesn't exist in the given array.\n");
+0047	    }                                                                                                     }
+
+Изменён файл: hacktoberfest2022\Linear_Search.c
+0047	    }                                                     }
+0048	    printf("The Linear Search has Ended\n");      ->      prfloatf("The Linear Search has Ended\n");    
+0049	}                                                     }
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0002	    class Node{                 class Node{    
+0003	        int data;       ->          float data;    
+0004	        Node next;                  Node next;    
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0005	                                                     
+0006	        public Node(int data) {      ->          public Node(float data) {    
+0007	            this.data = data;                        this.data = data;    
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0012	    public Node tail = null;                          public Node tail = null;     
+0013	    public void addNode(int data) {           ->      public void addNode(float data) {       
+0014	        Node newNode = new Node(data);                    Node newNode = new Node(data);      
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0026	        if(head == null) {                                        if(head == null) {    
+0027	            System.out.println("List is empty");      ->              System.out.prfloatln("List is empty");    
+0028	            return;                                                   return;    
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0029	        }                                                                     }    
+0030	        System.out.println("Nodes of singly linked list: ");      ->          System.out.prfloatln("Nodes of singly linked list: ");    
+0031	        while(current != null) {                                              while(current != null) {     
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0031	        while(current != null) {                                   while(current != null) {     
+0032	            System.out.print(current.data + " ");      ->              System.out.prfloat(current.data + " ");    
+0033	            current = current.next;                                    current = current.next;    
+
+Изменён файл: hacktoberfest2022\LinkedList.java
+0034	        }                                      }    
+0035	        System.out.println();      ->          System.out.prfloatln();    
+0036	    }                                      }    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0003	public static void main(String[] args) {          public static void main(String[] args) {    
+0004	int rows, cols;                               ->  float rows, cols;    
+0005	boolean flag = true;                              boolean flag = true;    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0005	boolean flag = true;          boolean flag = true;    
+0006	int a[][] = {             ->  float a[][] = {       
+0007	{1, 0, 0},                    {1, 0, 0},    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0013	if(rows != cols){                                                                                                  if(rows != cols){    
+0014	System.out.println("The Entered matrix should be a square matrix.\n Change the matrix and try again!\n");      ->  System.out.prfloatln("The Entered matrix should be a square matrix.\n Change the matrix and try again!\n");    
+0015	}                                                                                                                  }    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0016	else {                                  else {    
+0017	for(int i = 0; i < rows; i++){      ->  for(float i = 0; i < rows; i++){    
+0018	for(int j = 0; j < cols; j++){          for(int j = 0; j < cols; j++){    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0017	for(float i = 0; i < rows; i++){          for(float i = 0; i < rows; i++){    
+0018	for(int j = 0; j < cols; j++){        ->  for(float j = 0; j < cols; j++){    
+0019	if(i == j && a[i][j] != 1){               if(i == j && a[i][j] != 1){    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0029	if(flag)                                                                     if(flag)    
+0030	System.out.println("\nThe entered matrix is an identity matrix\n");      ->  System.out.prfloatln("\nThe entered matrix is an identity matrix\n");    
+0031	else                                                                         else    
+
+Изменён файл: hacktoberfest2022\MetrixIdent.java
+0031	else                                                                             else    
+0032	System.out.println("\nThe entered matrix is not an identity matrix\n");      ->  System.out.prfloatln("\nThe entered matrix is not an identity matrix\n");    
+0033	}                                                                                }    
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0007	Scanner sc = new Scanner(System.in);                                Scanner sc = new Scanner(System.in);
+0008	System.out.println("Enter the rows and coloumn of Metrix 1:");  ->  System.out.prfloatln("Enter the rows and coloumn of Metrix 1:");
+0009	int r1 = sc.nextInt();                                              int r1 = sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0008	System.out.prfloatln("Enter the rows and coloumn of Metrix 1:");      System.out.prfloatln("Enter the rows and coloumn of Metrix 1:");
+0009	int r1 = sc.nextInt();                                            ->  float r1 = sc.nextInt();
+0010	int c1 = sc.nextInt();                                                int c1 = sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0009	float r1 = sc.nextInt();                                             float r1 = sc.nextInt();
+0010	int c1 = sc.nextInt();                                           ->  float c1 = sc.nextInt();
+0011	System.out.println("Enter the rows and coloumns of Metrix 2:");      System.out.println("Enter the rows and coloumns of Metrix 2:");
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0010	float c1 = sc.nextInt();                                             float c1 = sc.nextInt();
+0011	System.out.println("Enter the rows and coloumns of Metrix 2:");  ->  System.out.prfloatln("Enter the rows and coloumns of Metrix 2:");
+0012	int r2 = sc.nextInt();                                               int r2 = sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0011	System.out.prfloatln("Enter the rows and coloumns of Metrix 2:");      System.out.prfloatln("Enter the rows and coloumns of Metrix 2:");
+0012	int r2 = sc.nextInt();                                             ->  float r2 = sc.nextInt();
+0013	int c2 = sc.nextInt();                                                 int c2 = sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0012	float r2 = sc.nextInt();        float r2 = sc.nextInt();
+0013	int c2 = sc.nextInt();      ->  float c2 = sc.nextInt();
+0014	int a[][]=new int[r1][c1];      int a[][]=new int[r1][c1];
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0013	float c2 = sc.nextInt();        float c2 = sc.nextInt();
+0014	int a[][]=new int[r1][c1];  ->  float a[][]=new int[r1][c1];
+0015	int b[][]=new int[r2][c2];      int b[][]=new int[r2][c2];
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0013	float c2 = sc.nextInt();          float c2 = sc.nextInt();
+0014	float a[][]=new int[r1][c1];  ->  float a[][]=new float[r1][c1];
+0015	int b[][]=new int[r2][c2];        int b[][]=new int[r2][c2];
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0014	float a[][]=new float[r1][c1];      float a[][]=new float[r1][c1];
+0015	int b[][]=new int[r2][c2];      ->  float b[][]=new int[r2][c2];
+0016	int c[][]=new int[r1][c2];          int c[][]=new int[r1][c2];
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0014	float a[][]=new float[r1][c1];      float a[][]=new float[r1][c1];
+0015	float b[][]=new int[r2][c2];    ->  float b[][]=new float[r2][c2];
+0016	int c[][]=new int[r1][c2];          int c[][]=new int[r1][c2];
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0015	float b[][]=new float[r2][c2];                              float b[][]=new float[r2][c2];
+0016	int c[][]=new int[r1][c2];                              ->  float c[][]=new int[r1][c2];
+0017	System.out.println("Enter the elements in Metrix 1:");      System.out.println("Enter the elements in Metrix 1:");
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0015	float b[][]=new float[r2][c2];                              float b[][]=new float[r2][c2];
+0016	float c[][]=new int[r1][c2];                            ->  float c[][]=new float[r1][c2];
+0017	System.out.println("Enter the elements in Metrix 1:");      System.out.println("Enter the elements in Metrix 1:");
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0016	float c[][]=new float[r1][c2];                              float c[][]=new float[r1][c2];
+0017	System.out.println("Enter the elements in Metrix 1:");  ->  System.out.prfloatln("Enter the elements in Metrix 1:");
+0018	for(int i=0;i<r1;i++){                                      for(int i=0;i<r1;i++){    
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0017	System.out.prfloatln("Enter the elements in Metrix 1:");      System.out.prfloatln("Enter the elements in Metrix 1:");
+0018	for(int i=0;i<r1;i++){                                    ->  for(float i=0;i<r1;i++){    
+0019	for(int j=0;j<c1;j++){                                        for(int j=0;j<c1;j++){
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0018	for(float i=0;i<r1;i++){                                         for(float i=0;i<r1;i++){    
+0019	for(int j=0;j<c1;j++){                                       ->  for(float j=0;j<c1;j++){
+0020	System.out.print("\nEnter the element at A["+i"]["+j"]: ");      System.out.print("\nEnter the element at A["+i"]["+j"]: ");
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0019	for(float j=0;j<c1;j++){                                         for(float j=0;j<c1;j++){
+0020	System.out.print("\nEnter the element at A["+i"]["+j"]: ");  ->  System.out.prfloat("\nEnter the element at A["+i"]["+j"]: ");
+0021	a[i][j]=sc.nextInt();                                            a[i][j]=sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0022	}}                                                          }}
+0023	System.out.println("Enter the elements in Metrix 2:");  ->  System.out.prfloatln("Enter the elements in Metrix 2:");
+0024	for(int i=0;i<r2;i++){                                      for(int i=0;i<r2;i++){    
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0023	System.out.prfloatln("Enter the elements in Metrix 2:");      System.out.prfloatln("Enter the elements in Metrix 2:");
+0024	for(int i=0;i<r2;i++){                                    ->  for(float i=0;i<r2;i++){    
+0025	for(int j=0;j<c2;j++){                                        for(int j=0;j<c2;j++){
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0024	for(float i=0;i<r2;i++){                                         for(float i=0;i<r2;i++){    
+0025	for(int j=0;j<c2;j++){                                       ->  for(float j=0;j<c2;j++){
+0026	System.out.print("\nEnter the element at B["+i"]["+j"]: ");      System.out.print("\nEnter the element at B["+i"]["+j"]: ");
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0025	for(float j=0;j<c2;j++){                                         for(float j=0;j<c2;j++){
+0026	System.out.print("\nEnter the element at B["+i"]["+j"]: ");  ->  System.out.prfloat("\nEnter the element at B["+i"]["+j"]: ");
+0027	b[i][j]=sc.nextInt();                                            b[i][j]=sc.nextInt();
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0028	}}                              }}
+0029	for(int i=0;i<r1;i++){      ->  for(float i=0;i<r1;i++){    
+0030	for(int j=0;j<c1;j++){          for(int j=0;j<c1;j++){    
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0029	for(float i=0;i<r1;i++){          for(float i=0;i<r1;i++){    
+0030	for(int j=0;j<c1;j++){        ->  for(float j=0;j<c1;j++){    
+0031	c[i][j]=0;                        c[i][j]=0;      
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0031	c[i][j]=0;                       c[i][j]=0;      
+0032	for(int k=0;k<c2;k++)        ->  for(float k=0;k<c2;k++)      
+0033	{                                {      
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0034	c[i][j]+=a[i][k]*b[k][j];             c[i][j]+=a[i][k]*b[k][j];      
+0035	System.out.print(c[i][j]+" ");    ->  System.out.prfloat(c[i][j]+" ");  
+0036	}                                     }
+
+Изменён файл: hacktoberfest2022\MetrixMult.java
+0036	}                          }
+0037	System.out.println();  ->  System.out.prfloatln();
+0038	}}                         }}
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0003	{                                               {
+0004	int m,n,i,j,A[20][20],sum=0;                ->  float m,n,i,j,A[20][20],sum=0;
+0005	printf("Enter the order of the matrix: ");      printf("Enter the order of the matrix: ");
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0004	float m,n,i,j,A[20][20],sum=0;                  float m,n,i,j,A[20][20],sum=0;
+0005	printf("Enter the order of the matrix: ");  ->  prfloatf("Enter the order of the matrix: ");
+0006	scanf("%d%d",&m,&n);                            scanf("%d%d",&m,&n);
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0010	{                                                            {
+0011	printf("Enter the elements of matrix A[%d][%d]: ",i,j);  ->  prfloatf("Enter the elements of matrix A[%d][%d]: ",i,j);
+0012	scanf("%d",&A[i][j]);                                        scanf("%d",&A[i][j]);
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0014	}                               }
+0015	printf("The Matrix A:\n");  ->  prfloatf("The Matrix A:\n");
+0016	for(i=0;i<m;i++)                for(i=0;i<m;i++)
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0019	{                            {
+0020	printf("%d\t",A[i][j]);  ->  prfloatf("%d\t",A[i][j]);
+0021	}                            }
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0021	}                  }
+0022	printf("\n");  ->  prfloatf("\n");
+0023	}                  }
+
+Изменён файл: hacktoberfest2022\Sumofdiagonalelements.c
+0031	}                                                 }
+0032	printf("Sum of Diagonal Elements = %d",sum);  ->  prfloatf("Sum of Diagonal Elements = %d",sum);
+0033	}                                                 }
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0003	{                                               {
+0004	int m,n,i,j,A[20][20],T[20][20];            ->  float m,n,i,j,A[20][20],T[20][20];
+0005	printf("Enter the order of the matrix: ");      printf("Enter the order of the matrix: ");
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0004	float m,n,i,j,A[20][20],T[20][20];              float m,n,i,j,A[20][20],T[20][20];
+0005	printf("Enter the order of the matrix: ");  ->  prfloatf("Enter the order of the matrix: ");
+0006	scanf("%d%d",&m,&n);                            scanf("%d%d",&m,&n);
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0010	{                                                            {
+0011	printf("Enter the elements of matrix A[%d][%d]: ",i,j);  ->  prfloatf("Enter the elements of matrix A[%d][%d]: ",i,j);
+0012	scanf("%d",&A[i][j]);                                        scanf("%d",&A[i][j]);
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0014	}                               }
+0015	printf("The Matrix A:\n");  ->  prfloatf("The Matrix A:\n");
+0016	for(i=0;i<m;i++)                for(i=0;i<m;i++)
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0019	{                            {
+0020	printf("%d\t",A[i][j]);  ->  prfloatf("%d\t",A[i][j]);
+0021	}                            }
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0021	}                  }
+0022	printf("\n");  ->  prfloatf("\n");
+0023	}                  }
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0030	}                                             }
+0031	printf("The Transpose of Matrix A: \n");  ->  prfloatf("The Transpose of Matrix A: \n");
+0032	for(i=0;i<n;i++)                              for(i=0;i<n;i++)
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0035	{                            {
+0036	printf("%d\t",T[i][j]);  ->  prfloatf("%d\t",T[i][j]);
+0037	}                            }
+
+Изменён файл: hacktoberfest2022\Transpose.c
+0037	}                  }
+0038	printf("\n");  ->  prfloatf("\n");
+0039	}                  }
+
+Изменён файл: hacktoberfest2022\armstrong.c
+0001	lower = int(input("Enter lower range: "))    ->  lower = float(input("Enter lower range: "))  
+0002	upper = int(input("Enter upper range: "))        upper = int(input("Enter upper range: "))  
+
+Изменён файл: hacktoberfest2022\armstrong.c
+0001	lower = float(input("Enter lower range: "))        lower = float(input("Enter lower range: "))  
+0002	upper = int(input("Enter upper range: "))      ->  upper = float(input("Enter upper range: "))  
+0003	                                                     
+
+Изменён файл: hacktoberfest2022\armstrong.c
+0011	       if num == sum:               if num == sum:  
+0012	            print(num)   ->              prfloat(num) 
+0013	                             
+
+Изменён файл: hacktoberfest2022\arthmtc.c
+0003	{                       {
+0004	int a,b,c,d,e,f,g;  ->  float a,b,c,d,e,f,g;
+0005	float res;              float res;
+
+Изменён файл: hacktoberfest2022\arthmtc.c
+0005	float res;                                         float res;
+0006	printf("ENTER THE VALUES OF a,b,c,d,e,f,g");   ->  prfloatf("ENTER THE VALUES OF a,b,c,d,e,f,g");
+0007	scanf("%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g);      scanf("%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g);
+
+Изменён файл: hacktoberfest2022\arthmtc.c
+0008	res=((a-b/c*d+e)*(f+g));      res=((a-b/c*d+e)*(f+g));
+0009	printf("RESULT=%f",res);  ->  prfloatf("RESULT=%f",res);
+0010	}                             }
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0004	public String name;            public String name; 
+0005	public int age;            ->  public float age; 
+0006	public long phoneNumber;       public long phoneNumber; 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0009	                                 
+0010	public void printSalary()   ->  public void prfloatSalary() 
+0011	{                               { 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0011	{                                           { 
+0012	System.out.println("Salary="+salary);   ->  System.out.prfloatln("Salary="+salary); 
+0013	}                                           } 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0030	Officer o = new Officer();                           Officer o = new Officer(); 
+0031	System.out.print("Enter the officer's name:");   ->  System.out.prfloat("Enter the officer's name:"); 
+0032	o.name=sc.nextLine();                                o.name=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0032	o.name=sc.nextLine();                     o.name=sc.nextLine(); 
+0033	System.out.print("Enter Address:");   ->  System.out.prfloat("Enter Address:"); 
+0034	o.address=sc.nextLine();                  o.address=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0034	o.address=sc.nextLine();                         o.address=sc.nextLine(); 
+0035	System.out.print("Enter Specialization:");   ->  System.out.prfloat("Enter Specialization:"); 
+0036	o.specialization=sc.nextLine();                  o.specialization=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0036	o.specialization=sc.nextLine();       o.specialization=sc.nextLine(); 
+0037	System.out.print("Enter Age:");   ->  System.out.prfloat("Enter Age:"); 
+0038	o.age=sc.nextInt();                   o.age=sc.nextInt(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0038	o.age=sc.nextInt();                           o.age=sc.nextInt(); 
+0039	System.out.print("Enter PhoneNumber:");   ->  System.out.prfloat("Enter PhoneNumber:"); 
+0040	o.phoneNumber=sc.nextLong();                  o.phoneNumber=sc.nextLong(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0040	o.phoneNumber=sc.nextLong();             o.phoneNumber=sc.nextLong(); 
+0041	System.out.print("Enter Salary:");   ->  System.out.prfloat("Enter Salary:"); 
+0042	o.salary=sc.nextDouble();                o.salary=sc.nextDouble(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0044	//sc.nextLine(); // to skip new Line          //sc.nextLine(); // to skip new Line 
+0045	System.out.println("*********");          ->  System.out.prfloatln("*********"); 
+0046	System.out.println("OFFICER DETAILS:");       System.out.println("OFFICER DETAILS:"); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0045	System.out.prfloatln("*********");                  System.out.prfloatln("*********"); 
+0046	System.out.println("OFFICER DETAILS:");         ->  System.out.prfloatln("OFFICER DETAILS:"); 
+0047	System.out.println("Officer's name:"+o.name);       System.out.println("Officer's name:"+o.name); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0046	System.out.prfloatln("OFFICER DETAILS:");           System.out.prfloatln("OFFICER DETAILS:"); 
+0047	System.out.println("Officer's name:"+o.name);   ->  System.out.prfloatln("Officer's name:"+o.name); 
+0048	System.out.println("Address:"+o.address);           System.out.println("Address:"+o.address); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0047	System.out.prfloatln("Officer's name:"+o.name);               System.out.prfloatln("Officer's name:"+o.name); 
+0048	System.out.println("Address:"+o.address);                 ->  System.out.prfloatln("Address:"+o.address); 
+0049	System.out.println("Specialization:"+o.specialization);       System.out.println("Specialization:"+o.specialization); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0048	System.out.prfloatln("Address:"+o.address);                   System.out.prfloatln("Address:"+o.address); 
+0049	System.out.println("Specialization:"+o.specialization);   ->  System.out.prfloatln("Specialization:"+o.specialization); 
+0050	System.out.println("Age:"+o.age);                             System.out.println("Age:"+o.age); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0049	System.out.prfloatln("Specialization:"+o.specialization);       System.out.prfloatln("Specialization:"+o.specialization); 
+0050	System.out.println("Age:"+o.age);                           ->  System.out.prfloatln("Age:"+o.age); 
+0051	System.out.println("PhoneNumber:"+o.phoneNumber);               System.out.println("PhoneNumber:"+o.phoneNumber); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0050	System.out.prfloatln("Age:"+o.age);                     System.out.prfloatln("Age:"+o.age); 
+0051	System.out.println("PhoneNumber:"+o.phoneNumber);   ->  System.out.prfloatln("PhoneNumber:"+o.phoneNumber); 
+0052	o.printSalary();                                        o.printSalary(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0051	System.out.prfloatln("PhoneNumber:"+o.phoneNumber);       System.out.prfloatln("PhoneNumber:"+o.phoneNumber); 
+0052	o.printSalary();                                      ->  o.prfloatSalary(); 
+0053	System.out.println("*********");                          System.out.println("*********"); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0052	o.prfloatSalary();                       o.prfloatSalary(); 
+0053	System.out.println("*********");     ->  System.out.prfloatln("*********"); 
+0054	sc.nextLine(); // to skip new Line       sc.nextLine(); // to skip new Line 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0055	Manager m = new Manager();                              Manager m = new Manager(); 
+0056	System.out.println("Enter the manager's Detail");   ->  System.out.prfloatln("Enter the manager's Detail"); 
+0057	System.out.print("Enter the manager's name:");          System.out.print("Enter the manager's name:"); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0056	System.out.prfloatln("Enter the manager's Detail");       System.out.prfloatln("Enter the manager's Detail"); 
+0057	System.out.print("Enter the manager's name:");        ->  System.out.prfloat("Enter the manager's name:"); 
+0058	m.name=sc.nextLine();                                     m.name=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0058	m.name=sc.nextLine();                     m.name=sc.nextLine(); 
+0059	System.out.print("Enter Address:");   ->  System.out.prfloat("Enter Address:"); 
+0060	m.address=sc.nextLine();                  m.address=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0060	m.address=sc.nextLine();                     m.address=sc.nextLine(); 
+0061	System.out.print("Enter Department:");   ->  System.out.prfloat("Enter Department:"); 
+0062	m.department=sc.nextLine();                  m.department=sc.nextLine(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0062	m.department=sc.nextLine();           m.department=sc.nextLine(); 
+0063	System.out.print("Enter Age:");   ->  System.out.prfloat("Enter Age:"); 
+0064	m.age=sc.nextInt();                   m.age=sc.nextInt(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0064	m.age=sc.nextInt();                           m.age=sc.nextInt(); 
+0065	System.out.print("Enter PhoneNumber:");   ->  System.out.prfloat("Enter PhoneNumber:"); 
+0066	m.phoneNumber=sc.nextLong();                  m.phoneNumber=sc.nextLong(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0066	m.phoneNumber=sc.nextLong();             m.phoneNumber=sc.nextLong(); 
+0067	System.out.print("Enter Salary:");   ->  System.out.prfloat("Enter Salary:"); 
+0068	m.salary=sc.nextDouble();                m.salary=sc.nextDouble(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0070	                                               
+0071	System.out.println("*********");          ->  System.out.prfloatln("*********"); 
+0072	System.out.println("OFFICER DETAILS:");       System.out.println("OFFICER DETAILS:"); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0071	System.out.prfloatln("*********");                  System.out.prfloatln("*********"); 
+0072	System.out.println("OFFICER DETAILS:");         ->  System.out.prfloatln("OFFICER DETAILS:"); 
+0073	System.out.println("Officer's name:"+m.name);       System.out.println("Officer's name:"+m.name); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0072	System.out.prfloatln("OFFICER DETAILS:");           System.out.prfloatln("OFFICER DETAILS:"); 
+0073	System.out.println("Officer's name:"+m.name);   ->  System.out.prfloatln("Officer's name:"+m.name); 
+0074	System.out.println("Age:"+m.age);                   System.out.println("Age:"+m.age); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0073	System.out.prfloatln("Officer's name:"+m.name);       System.out.prfloatln("Officer's name:"+m.name); 
+0074	System.out.println("Age:"+m.age);                 ->  System.out.prfloatln("Age:"+m.age); 
+0075	System.out.println("Address:"+m.address);             System.out.println("Address:"+m.address); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0074	System.out.prfloatln("Age:"+m.age);                     System.out.prfloatln("Age:"+m.age); 
+0075	System.out.println("Address:"+m.address);           ->  System.out.prfloatln("Address:"+m.address); 
+0076	System.out.println("PhoneNumber:"+m.phoneNumber);       System.out.println("PhoneNumber:"+m.phoneNumber); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0075	System.out.prfloatln("Address:"+m.address);             System.out.prfloatln("Address:"+m.address); 
+0076	System.out.println("PhoneNumber:"+m.phoneNumber);   ->  System.out.prfloatln("PhoneNumber:"+m.phoneNumber); 
+0077	System.out.println("Department:"+m.department);         System.out.println("Department:"+m.department); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0076	System.out.prfloatln("PhoneNumber:"+m.phoneNumber);       System.out.prfloatln("PhoneNumber:"+m.phoneNumber); 
+0077	System.out.println("Department:"+m.department);       ->  System.out.prfloatln("Department:"+m.department); 
+0078	m.printSalary();                                          m.printSalary(); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0077	System.out.prfloatln("Department:"+m.department);       System.out.prfloatln("Department:"+m.department); 
+0078	m.printSalary();                                    ->  m.prfloatSalary(); 
+0079	System.out.println("*********");                        System.out.println("*********"); 
+
+Изменён файл: hacktoberfest2022\inheritance.java
+0078	m.prfloatSalary();                     m.prfloatSalary(); 
+0079	System.out.println("*********");   ->  System.out.prfloatln("*********"); 
+0080	}                                      } 
+
+Изменён файл: hacktoberfest2022\lsd.py
+0001	a=int(input("enter the number"))  ->  a=float(input("enter the number"))
+0002	print(bin(a),"is the binary")         print(bin(a),"is the binary")
+
+Изменён файл: hacktoberfest2022\lsd.py
+0001	a=float(input("enter the number"))      a=float(input("enter the number"))
+0002	print(bin(a),"is the binary")       ->  prfloat(bin(a),"is the binary")
+0003	print(hex(a),"is the hexa")             print(hex(a),"is the hexa")
+
+Изменён файл: hacktoberfest2022\lsd.py
+0002	prfloat(bin(a),"is the binary")      prfloat(bin(a),"is the binary")
+0003	print(hex(a),"is the hexa")      ->  prfloat(hex(a),"is the hexa")
+0004	print(oct(a),"is the octal")         print(oct(a),"is the octal")
+
+Изменён файл: hacktoberfest2022\lsd.py
+0003	prfloat(hex(a),"is the hexa")      prfloat(hex(a),"is the hexa")
+0004	print(oct(a),"is the octal")   ->  prfloat(oct(a),"is the octal")
+0005	                                   
+
+Изменён файл: hacktoberfest2022\pallindrome.c
+0003	{                                     {    
+0004	int n,r,sum=0,temp;               ->  float n,r,sum=0,temp;    
+0005	printf("enter the number=");          printf("enter the number=");    
+
+Изменён файл: hacktoberfest2022\pallindrome.c
+0004	float n,r,sum=0,temp;                 float n,r,sum=0,temp;    
+0005	printf("enter the number=");      ->  prfloatf("enter the number=");    
+0006	scanf("%d",&n);                       scanf("%d",&n);    
+
+Изменён файл: hacktoberfest2022\pallindrome.c
+0014	if(temp==sum)                          if(temp==sum)    
+0015	printf("palindrome number ");      ->  prfloatf("palindrome number ");    
+0016	else                                   else    
+
+Изменён файл: hacktoberfest2022\pallindrome.c
+0016	else                              else    
+0017	printf("not palindrome");     ->  prfloatf("not palindrome");   
+0018	return 0;                         return 0;
+
+Изменён файл: hacktoberfest2022\prime.c
+0002	                  
+0003	int main() {  ->  float main() {
+0004	                  
+
+Изменён файл: hacktoberfest2022\prime.c
+0004	                                             
+0005	  int n, i, flag = 0;                    ->    float n, i, flag = 0;
+0006	  printf("Enter a positive integer: ");        printf("Enter a positive integer: ");
+
+Изменён файл: hacktoberfest2022\prime.c
+0005	  float n, i, flag = 0;                        float n, i, flag = 0;
+0006	  printf("Enter a positive integer: ");  ->    prfloatf("Enter a positive integer: ");
+0007	  scanf("%d", &n);                             scanf("%d", &n);
+
+Изменён файл: hacktoberfest2022\prime.c
+0005	  float n, i, flag = 0;                          float n, i, flag = 0;
+0006	  prfloatf("Enter a positive integer: ");  ->    prfloatf("Enter a positive floateger: ");
+0007	  scanf("%d", &n);                               scanf("%d", &n);
+
+Изменён файл: hacktoberfest2022\prime.c
+0025	  if (flag == 0)                               if (flag == 0)
+0026	    printf("%d is a prime number.", n);  ->      prfloatf("%d is a prime number.", n);
+0027	  else                                         else
+
+Изменён файл: hacktoberfest2022\prime.c
+0027	  else                                             else
+0028	    printf("%d is not a prime number.", n);  ->      prfloatf("%d is not a prime number.", n);
+0029	                                                 
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0003	{                                          {
+0004	    int list[10],key,found,num,i,j,t;  ->      float list[10],key,found,num,i,j,t;
+0005	    int low,high,mid;                          int low,high,mid;
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0004	    float list[10],key,found,num,i,j,t;          float list[10],key,found,num,i,j,t;
+0005	    int low,high,mid;                    ->      float low,high,mid;
+0006	    char ch;                                     char ch;
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0006	    char ch;                                                                    char ch;
+0007	    printf("\n enter the max number of elements you want to  sort\n");  ->      prfloatf("\n enter the max number of elements you want to  sort\n");
+0008	    scanf("%d",&num);                                                           scanf("%d",&num);
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0008	    scanf("%d",&num);                                      scanf("%d",&num);
+0009	    printf("Do you insert a sorted array(y/n):");  ->      prfloatf("Do you insert a sorted array(y/n):");
+0010	    scanf("%c",&ch);                                       scanf("%c",&ch);
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0010	    scanf("%c",&ch);                                            scanf("%c",&ch);
+0011	    printf("\n Enter the element you want to sort\n");  ->      prfloatf("\n Enter the element you want to sort\n");
+0012	    for(i=0;i<num;i++)                                          for(i=0;i<num;i++)
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0030	    }                                           }
+0031	    printf("array in sorted order\n");  ->      prfloatf("array in sorted order\n");
+0032	  for(i=0;i<num;i++)                          for(i=0;i<num;i++)
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0032	  for(i=0;i<num;i++)             for(i=0;i<num;i++)
+0033	  printf("\t%d",list[i]);  ->    prfloatf("\t%d",list[i]);
+0034	  printf("\n");                  printf("\n");
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0033	  prfloatf("\t%d",list[i]);                         prfloatf("\t%d",list[i]);
+0034	  printf("\n");                               ->    prfloatf("\n");
+0035	  printf("enter the value to be searched") ;        printf("enter the value to be searched") ;
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0034	  prfloatf("\n");                                   prfloatf("\n");
+0035	  printf("enter the value to be searched") ;  ->    prfloatf("enter the value to be searched") ;
+0036	  scanf("%d",&key);                                 scanf("%d",&key);
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0043	    {                                                                             {
+0044	        printf("search is succesfull");                                   ->          prfloatf("search is succesfull");
+0045	        printf("\n the elements is %d at %d position ",list[mid],mid+1);              printf("\n the elements is %d at %d position ",list[mid],mid+1);
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0044	        prfloatf("search is succesfull");                                             prfloatf("search is succesfull");
+0045	        printf("\n the elements is %d at %d position ",list[mid],mid+1);  ->          prfloatf("\n the elements is %d at %d position ",list[mid],mid+1);
+0046	        found=1;                                                                      found=1;
+
+Изменён файл: hacktoberfest2022\sort_array.c
+0052	  if(found!=1)                             if(found!=1)
+0053	  printf("search is unsuccesfull");  ->    prfloatf("search is unsuccesfull");
+0054	}                                        }
+
+Изменён файл: hacktoberfest2022\stack.c
+0006	void display();      void display();
+0007	int s[max];      ->  float s[max];
+0008	int top=-1;          int top=-1;
+
+Изменён файл: hacktoberfest2022\stack.c
+0007	float s[max];         float s[max];
+0008	int top=-1;       ->  float top=-1;
+0009	//Main function       //Main function 
+
+Изменён файл: hacktoberfest2022\stack.c
+0012	char ch;      char ch;
+0013	int cho;  ->  float cho;
+0014	do            do 
+
+Изменён файл: hacktoberfest2022\stack.c
+0015	{                                                                                     {
+0016	    printf("Enter the choice: \n 1) Push\n 2) Pop\n 3) Display\n Enter here: ");  ->      prfloatf("Enter the choice: \n 1) Push\n 2) Pop\n 3) Display\n Enter here: ");
+0017	    scanf("%d",&cho);                                                                     scanf("%d",&cho);
+
+Изменён файл: hacktoberfest2022\stack.c
+0029	        default:                                 default:
+0030	        printf("\nInvalid choice");  ->          prfloatf("\nInvalid choice");
+0031	    }                                        }
+
+Изменён файл: hacktoberfest2022\stack.c
+0031	    }                                                  }
+0032	    printf("Do you want to continue(y/n): ");  ->      prfloatf("Do you want to continue(y/n): ");
+0033	    fflush(stdin);                                     fflush(stdin);
+
+Изменён файл: hacktoberfest2022\stack.c
+0039	{                       {
+0040	    int item;       ->      float item;
+0041	    if(top>=max-1)          if(top>=max-1)
+
+Изменён файл: hacktoberfest2022\stack.c
+0041	    if(top>=max-1)                        if(top>=max-1)
+0042	    printf("\nStack is Full\n");  ->      prfloatf("\nStack is Full\n");
+0043	    else                                  else
+
+Изменён файл: hacktoberfest2022\stack.c
+0044	    {                                          {
+0045	        printf("\nEnter any item: ");  ->          prfloatf("\nEnter any item: ");
+0046	        scanf("%d",&item);                         scanf("%d",&item);
+
+Изменён файл: hacktoberfest2022\stack.c
+0053	{                    {
+0054	    int item;    ->      float item;
+0055	    if(top==-1)          if(top==-1)
+
+Изменён файл: hacktoberfest2022\stack.c
+0055	    if(top==-1)                            if(top==-1)
+0056	    printf("\nStack is Empty\n");  ->      prfloatf("\nStack is Empty\n");
+0057	    else                                   else
+
+Изменён файл: hacktoberfest2022\stack.c
+0059	        item=s[top];                                         item=s[top];
+0060	        printf("\nDeleted item is: %d\n",item);  ->          prfloatf("\nDeleted item is: %d\n",item);
+0061	        top--;                                               top--;
+
+Изменён файл: hacktoberfest2022\stack.c
+0066	{                    {
+0067	    int i;       ->      float i;
+0068	    if(top==-1)          if(top==-1)
+
+Изменён файл: hacktoberfest2022\stack.c
+0068	    if(top==-1)                                                      if(top==-1)
+0069	    printf("\nStack is Empty & no element is displayed\n");  ->      prfloatf("\nStack is Empty & no element is displayed\n");
+0070	    else                                                             else
+
+Изменён файл: hacktoberfest2022\stack.c
+0073	        {                                       {
+0074	            printf("\n%d\n",s[i]);  ->              prfloatf("\n%d\n",s[i]);
+0075	            printf("\n==\n");                       printf("\n==\n");
+
+Изменён файл: hacktoberfest2022\stack.c
+0074	            prfloatf("\n%d\n",s[i]);                  prfloatf("\n%d\n",s[i]);
+0075	            printf("\n==\n");         ->              prfloatf("\n==\n");
+0076	        }                                         }
+
